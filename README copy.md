@@ -32,6 +32,7 @@ export default header
 
 
 <hr />
+
 > React Lifecycle
 
   life cycle ของ React ที่จะมี method ไว้ใช้ควบคุมการแสดงผลของ UI ตั้งแต่ก่อนแสดงผล (before render) หลังแสดงผล (after render) หรือการแสดงผลใหม่อีกรอบ (re-render)
