@@ -1,5 +1,11 @@
 > ### useContext
+
+useContext คือ การสร้าง store ไว้นอก Component การใช้งานจำต้อง สร้างตัว createContext() ขึ้นมาก่อนแล้วนำไปครอบ component ที่ต้องการใช้งาน store นั้นๆ ข้อดีของการใช้งาน useContext ช่วยในการลดปัญหาการส่ง props ไปยัง component ที่ต้องการได้ ใน component ไหนอย่างให้งาน state ก็สามารถเรียกใช้งาน useContext() ได้เลยตามตัวอย่าง
+
 ```
+import { useState, createContext, useContext } from "react";
+const UserContext = createContext();
+
 function Component1() {
   const [user, setUser] = useState("Jesse Hall");
 

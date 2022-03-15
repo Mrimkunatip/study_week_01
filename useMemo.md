@@ -1,5 +1,11 @@
 > ### useMemo
 
+
+หลักการของ useMemo คือการ Cache ข้อมูลไว้
+- ถูกเรียกครั้งแรกเมื่อมีการ Render
+- ถูกเรียกอีกครั้งเมื่อมีการ Re-Render และ ค่าใน Array deps มีการเปลี่ยนแปลง
+- Return ออกเป็นค่า Value
+
 ```
 useMemo() => {
   const [number, setNumber] = useState(0)

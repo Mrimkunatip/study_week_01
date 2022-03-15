@@ -1,5 +1,10 @@
 > ### useCallback
 
+หลักการของ useCallback คือการ Cache ฟังก์ชันไว้
+- ไม่ ถูกเรียกเมื่อมีการ Render (จะถูกเรียกเมื่อเราสั่ง Call ฟังก์ชันเอง)
+- ถูกเรียกอีกครั้งเมื่อสั่ง Call ฟังก์ชัน และ ค่าใน Array deps มีการเปลี่ยนแปลง
+- Return ออกเป็น Function
+
 ```
 () => {
   const [number, setNumber] = useState(0)
