@@ -1,5 +1,7 @@
 > ### useReducers
 
+UseReducer เป็นตัวช่วยในการจัดการ state ต่างๆ จะสร้างเป็น Function reducer ตามตัวอย่าง ในการใช้งานจะ มี state เริ่มต้น เเล้ว action ต่างๆ การเรียกใช้ useRedcer นั้น จะเหมือนการใช้งาน useState แต่ จะต้องส่ง function Reducer เข้าไปด้วย เช่น ในตัวอย่าง [const [todos, dispatch] = useReducer(reducer, initialTodos);] พอ function ไหนจะทำงานกับ state ก็จะ dispatch type เข้าไป เพื่อให้action นั้นเข้าไปทำงานใน function ตาม case ที่ action ตรงกัน 
+
 ```
 import { useReducer } from "react";
 import ReactDOM from "react-dom";
